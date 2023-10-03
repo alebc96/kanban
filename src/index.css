@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#btn-switch{
+  display: none;
+}
+
+#btn-switch:checked~ .lbl-bar{
+  background-color: #645FC6;
+}
+
+#btn-switch:checked~ .lbl-bar:after{
+  left: 33px;
+}
+
+.lbl-bar{
+  display: inline-block;
+   width: 52px;
+   height: 24px;
+   background-color: #aaaa;
+   border-radius: 100px;
+   position: relative;
+   cursor: pointer;
+}
+
+.lbl-bar:after{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 100px;
+  top: 4px;
+  left: 5px;
+  transition: .3s;
+}
+
