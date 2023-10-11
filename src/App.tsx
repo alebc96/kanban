@@ -3,18 +3,20 @@ import Board from './components/board/Board';
 import Header from './components/shared/Header';
 import Sidebar from './components/shared/Sidebar';
 import { RiEyeLine } from "react-icons/ri";
+import AddTask from './components/tasks/AddTask';
 
 
 
 function App() {
 
   const [showSideBar, setShowSideBar] = useState(true)
+  const [showAddTask, setShowAddTask] = useState(false)
 
   return (
     <div className='flex h-full w-full relative'>
-      <Sidebar showSideBar = { showSideBar } setShowSideBar = {setShowSideBar}/>
+      <Sidebar showSideBar = { showSideBar } setShowSideBar = { setShowSideBar }/>
       <div className={`w-full flex flex-col ${showSideBar ? "pl-56" :  "pl-0"}`}>
-        <Header/>
+        <Header showAddTask = { showAddTask } setShowAddTask = { setShowAddTask }/>
         <Board/>
       </div>
 
@@ -28,6 +30,13 @@ function App() {
         <></>
       }
 
+      {
+        showAddTask === true
+        ?
+          <AddTask showAddTask = {showAddTask} setShowAddTask = {setShowAddTask}/>
+        :
+        <></>
+      }
     </div>
   )
 }

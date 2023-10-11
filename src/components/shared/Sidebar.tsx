@@ -55,7 +55,7 @@ function Sidebar( props: SidebarProps) {
             </section>
 
             <section className="pb-5 w-full">
-                <button onClick={()=>setShowSideBar(!showSideBar)} className="text-gray-500 flex justify-center items-center pl-8 gap-3"><RiEyeOffLine/> Hide sidebar</button>
+                <button onClick={() => setShowSideBar(!showSideBar)} className="text-gray-500 flex justify-center items-center pl-8 gap-3"><RiEyeOffLine/> Hide sidebar</button>
             </section>
         </div>    
     </nav>

@@ -15,8 +15,6 @@ function BoardColumn() {
             <BoardCard/>
             <BoardCard/>
         </section>
-
-        
     </div>
   )
 }
