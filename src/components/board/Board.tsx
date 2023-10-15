@@ -1,12 +1,14 @@
 import BoardColumn from "./BoardColumn"
 import { RiAddFill } from "react-icons/ri";
 
+const columnName = ["todo", "doing", "done"];
+
 function Board() {
   return (
     <div className="w-full h-full bg-[#20212C] flex justify-start overflow-y-auto board">
-        <BoardColumn/>
-        <BoardColumn/>
-        <BoardColumn/>
+        <BoardColumn colName = {columnName[0]}/>
+        <BoardColumn colName = {columnName[1]}/>
+        <BoardColumn colName = {columnName[2]}/>
 
 
         <section className="px-8 py-4">

@@ -7,11 +7,10 @@ function Header( props: AddTaskProps) {
   const {showAddTask, setShowAddTask} = props
 
   const handleStatus = () => {
-    console.log(showAddTask)
     setShowAddTask(!showAddTask)
   }
   return (
-    <header className="flex items-center justify-between bg-[#2B2C37] h-20 w-full px-10 text-gray-300">
+    <header className="flex items-center justify-between bg-[#2B2C37] h-20 w-full px-10 text-gray-300 border border-[#2B2C37] border-b-gray-700">
         <section>
             <h2 className="text-xl">Platform Launch</h2>
         </section>

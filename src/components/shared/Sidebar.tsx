@@ -7,7 +7,7 @@ function Sidebar( props: SidebarProps) {
     
 
   return (
-    <nav className={ `w-56 h-full bg-[#2B2C37] flex flex-col justify-between fixed ${ showSideBar ? "left-0" : "-left-full" } transition-all` }>
+    <nav className={ `w-56 h-full bg-[#2B2C37] flex flex-col justify-between fixed ${ showSideBar ? "left-0" : "-left-full" } transition-all border border-[#2B2C37] border-r-gray-700` }>
         <div>
             <div className="flex justify-center items-center pt-5 gap-2">
                 <RiListCheck className="text-[#645FC6] bold text-3xl bold font-bold"/>
